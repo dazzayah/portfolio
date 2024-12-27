@@ -1,6 +1,7 @@
 ---
 import "@fontsource-variable/onest"
 import Header from '../components/Header.astro';
+import Background from '../assets/animations/Background.astro';
 
 interface Props {
 	title: string
@@ -26,17 +27,12 @@ Cabe destacar que lo que más he utilizado para estilar mi página es TailwindCS
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 		<title>{title}</title>
 	</head>
-	
 	<body> 
-		<div
-		class="absolute top-0 left-0 -z-20 h-svh w-full 
-			   bg-[#1C1B22] 
-			   bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-		<div class="absolute -z-10 inset-0 h-full w-full 
-			   bg-[radial-gradient(#213137_1px,transparent_1px)]
-			   [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"></div> 
-			  <Header />
-		<slot />
+		<Background />
+		<Header />
+		<main>
+			<slot />
+		</main>
 	</body>
 </html>
 
@@ -56,5 +52,4 @@ Cabe destacar que lo que más he utilizado para estilar mi página es TailwindCS
 		width: 100%;
 		background: #1C1B22;
 	}
-
 </style>

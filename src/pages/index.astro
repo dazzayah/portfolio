@@ -3,25 +3,26 @@
 // Al hallarnos en el index, de momento solo he visto necesario incluir cada uno de los componentes,
 // pero cada uno de ellos tiene su propio script para hacerlos más escalables y reutilizables.
 
-// Secciones principales de la página
+// Secciones y estructura principal de la página
 
 import Layout from "../layouts/Layout.astro";
+
 import Section from "../components/SectionWrapper.astro";
 import Title from "../components/TitleSection.astro";
 import Hero from "../components/Hero.astro";
-import Formation from "../components/Experience.astro";
-import Projects from "../components/Projects.astro";
-import AboutMe from "../components/AboutMe.astro";
 import Footer from "../components/Footer.astro";
+
+// Bloques de contenido
+
+import Formation from "../assets/blocks/Formation.astro";
+import Projects from "../assets/blocks/Projects.astro";
+import AboutMe from "../assets/blocks/AboutMe.astro";
+
 
 // Componentes adicionales, iconos, animaciones y demás
 
-import Fade from "../components/FadeEvent.astro";
 import CodeIcon from "../assets/icons/Code.astro";
-import MouseScroll from "../components/MouseScroll.astro";
 import AboutMeIcon from "../assets/icons/QuestionMark.astro";
-
-
 ---
 
 <!-- 
@@ -35,37 +36,29 @@ dentro del tag, se inserta el contenido específico de la página.
 
 <!-- Mediante JS, es posible dotar al layout de sus propios argumentos, en este caso un título y una descripción (SEO) -->
 <Layout title="Dazzayah | Portfolio" description="Contrata a Iliá Briansó">
-	<main>
-		<Section class="pt-32 lg:pt-52">
-			<Hero />
-			<MouseScroll />
-		</Section>
 
-		<Section id="formacion" class="py-10">
-			<Fade />
-			<ol
-				id="formacion-list"
-				class="flex lg:flex-row flex-col transition-all duration-500 opacity-0 translate-y-10">
-				<Formation />
-			</ol>
-		</Section>
+	<Section class="pt-32 lg:pt-52">
+		<Hero />
+	</Section>
 
-		<Section id="proyectos">
-			<Title>
-				<CodeIcon />
-				Proyectos
-			</Title>
-			<Projects />
-		</Section>
-		
-		<Section id="sobre-mi" class="pt-10">
-			<Title>
-				<AboutMeIcon />
-				Sobre mí
-			</Title>
-			<AboutMe />
-		</Section>
-		<Footer />
-	</main>
+	<Section id="formacion" class="py-10">
+		<Formation />
+	</Section>
+
+	<Section id="proyectos">
+		<Title>
+			<CodeIcon /> Proyectos
+		</Title>
+		<Projects />
+	</Section>
+
+	<Section id="sobre-mi" class="pt-10">
+		<Title>
+			<AboutMeIcon /> Sobre mí
+		</Title>
+		<AboutMe />
+	</Section>
+
+	<Footer />
+
 </Layout>
-

@@ -1,0 +1,43 @@
+---
+import Fade from "../../assets/animations/FadeEvent.astro";
+
+const experiencia = [
+    {
+        titulo: "Modelación 3D en Blender y FX",
+        fecha: "2020 - Udemy, Online",
+        descr: "Aprendí mucho sobre la manipulación y creación de objetos 3D, de texturizado, rendering, multimedia y efectos especiales en Blender y otros programas.",
+    },
+    {
+        titulo: "Sistemas Microinformáticos y Redes",
+        fecha: "2022 - Instituto Francesc Vidal i Barraquer",
+        descr: "Estudios de grado medio en sistemas microinformáticos y redes, donde se nos especializa en múltiples disciplinas del ámbito IT, sistemas, redes locales, etc.",
+    },
+    {
+        titulo: "Administración de Sistemas Informáticos en Red",
+        fecha: "2024 - Instituto Francesc Vidal i Barraquer",
+        descr: "Estudios de grado superior en administración de sistemas informáticos en red, donde se nos especializa en la administración de sistemas, redes, seguridad, etc.",
+    },
+];
+---
+
+<Fade />
+<ol
+    id="formacion-list"
+    class="flex lg:flex-row flex-col transition-all duration-500 opacity-0 translate-y-10">
+    {experiencia.map(({ titulo, fecha, descr }) => (
+        <li class="mb-10 ms-4">
+            <div class="flex items-center">
+                <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-4 ring-blue-300 dark:bg-blue-900 dark:ring-blue-700 shrink-0">
+                    <svg class="w-2.5 h-2.5 text-charcoal dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="mt-3 sm:pe-8">
+                <h3 class="text-md font-semibold text-white dark:text-white flex lg:min-h-[3.5rem]">{titulo}</h3>
+                <time class="mb-2 text-sm font-normal text-gray-400 dark:text-gray-500 flex lg:min-h-[6rem]">{descr}</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 flex">{fecha}</p>
+            </div>
+        </li>
+    ))}
+</ol>
