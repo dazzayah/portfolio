@@ -1,48 +1,48 @@
-# Astro Starter Kit: Basics
+# My Portfolio Website 🚀
 
-```sh
-npm create astro@latest -- --template basics
-```
+Welcome to my personal portfolio website! This site showcases and covers my skills, projects, and experiences so far! Built using [Astro](https://astro.build/) and [TailwindCSS](https://tailwindcss.com/).
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Features 🌟
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Responsive Design:** (Pretty) Optimized for all devices.   
+- **Fast Performance:** Leveraging Astro's static site generation for quick load times.  
+- **SEO Optimized:** Structured for better search engine visibility.   
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Technologies Used 🛠️
 
-## 🚀 Project Structure
+- **Astro:** A static site JS framework focused on fast performance, loving the component react-ish workflow.  
+- **TailwindCSS:** A really versatile CSS Framework.  
+- **JavaScript:** Aiming for interactive elements and dynamic content.  
 
-Inside of your Astro project, you'll see the following folders and files:
+## Setup and Installation 🛠️
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. **Clone the Repository:**  
+   ```bash
+   git clone https://github.com/dazzayah/portfolio.git
+   cd portfolio
+   ```  
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+2. **Install Dependencies:**  
+   ```bash
+   npm install
+   ```  
 
-## 🧞 Commands
+3. **Run the Development Server:**  
+   ```bash
+   npm run dev
+   ```  
+   Visit `http://localhost:4321` in your browser to view the site locally. (If :4321 is the default port)
 
-All commands are run from the root of the project, from a terminal:
+4. **Build for Production:**  
+   ```bash
+   npm run build
+   ```  
+   The production-ready site will be generated in the `dist/` directory.  
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Contributing 🤝
 
-## 👀 Want to learn more?
+Contributions are welcome! If you have suggestions, improvements, or find any issues, please open an [issue](https://github.com/dazzayah/portfolio/issues) or submit a pull request.  
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## License 📄
+
+This project is licensed under the [MIT License](LICENSE).  
