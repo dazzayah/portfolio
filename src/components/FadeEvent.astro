@@ -15,7 +15,7 @@ No está muy allá, ya que apunta directamente al ID de la lista, por lo que no 
         });
       },
       {
-        threshold: 0.8, // Visibilidad antes de que se active la animación
+        threshold: (window.innerWidth >= 200 && window.innerWidth <= 500) ? 0.3 : 0.6,
       },
     );
 

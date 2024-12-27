@@ -14,9 +14,9 @@ export default {
 				'charcoal': '#294C60',
 				'oxford-blue': '#1C1B22'
 			},
-		},
-		screens: {
-			'lg': '1200px', // Breakpoint añadido
+			screens: {
+				'lg': '1200px', // Breakpoint añadido
+			},
 		},
 	},
 	plugins: [
